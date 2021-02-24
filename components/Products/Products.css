@@ -7,6 +7,7 @@
 	margin: var(--spacing-large) auto;
 }
 .products-element {
+    	filter: drop-shadow(2px 4px 6px silver);
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
