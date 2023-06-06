@@ -42,5 +42,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/contact/light', [\App\Http\Controllers\Light\ContactController::class, 'contact'])->name('contact.light');
     Route::post('/contact-us', [\App\Http\Controllers\Light\ContactController::class, 'store'])->name('contact.us.store');
     Route::get('/category/light/{category}', [\App\Http\Controllers\Light\ProductController::class, 'categoryProduct'])->name('categoryProduct.light');
-    Route::view('/about/light','/Light.about')->name('about.light');
+    Route::get('/about/light', [\App\Http\Controllers\Light\AboutController::class, 'index'])->name('about.light');
+
 });
