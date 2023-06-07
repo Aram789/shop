@@ -1,7 +1,7 @@
 @extends('Light.layouts.app')
 
 @section('content')
-    <div class="container" id="basket_page">
+    <div class="container" id="basket_page" data-aos="fade-down">
         <div class="row mx-0 text-white gap-3">
             <strong class="fs-1">Basket</strong>
             @if(!empty($product) && count($product))

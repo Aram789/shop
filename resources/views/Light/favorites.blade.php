@@ -1,7 +1,7 @@
 @extends('Light.layouts.app')
 
 @section('content')
-    <div class="container" id="favorite_page">
+    <div class="container" id="favorite_page" data-aos="fade-down">
         <div class="row mx-0 text-white gap-3">
             <strong class="fs-1">Favorites</strong>
             @if(!empty($product) && count($product))
